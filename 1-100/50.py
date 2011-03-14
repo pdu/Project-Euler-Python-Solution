@@ -16,6 +16,8 @@ for i in range(0, num):
 resCnt = 0
 resValue = 0
 for i in range(0, num - resCnt):
+    if primeList[i] * resCnt > n:
+        break
     for j in range(i + resCnt, num):
         if i == 0:
             value = summ[j]
